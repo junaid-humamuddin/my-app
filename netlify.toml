@@ -2,7 +2,7 @@
   functions = "functions"
   publish = "build"
   
-[[redirects]]
+[[redirects]] 
   force = true
   from = "/api/*"
   status = 200
