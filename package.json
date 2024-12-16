@@ -5,8 +5,12 @@
   "dependencies": {
     "@mui/material": "^6.2.0",
     "axios": "^1.7.9",
+    "cors": "^2.8.5",
     "cra-template": "1.2.0",
+    "express": "^4.21.2",
+    "express-async-handler": "^1.2.0",
     "formik": "^2.4.6",
+    "netlify-cli": "^17.38.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-helmet": "^6.1.0",
@@ -15,6 +19,7 @@
     "react-router-dom": "^7.0.2",
     "react-scripts": "5.0.1",
     "sass": "^1.82.0",
+    "serverless-http": "^3.2.0",
     "styled-component": "^2.8.0"
   },
   "scripts": {
