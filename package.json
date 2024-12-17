@@ -1,5 +1,5 @@
 {
-  "name": "taxi-app",
+  "name": "netlify-express-react-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
