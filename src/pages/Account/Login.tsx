@@ -1,4 +1,3 @@
-import React from 'react'
 import './Login.scss';
 import logo from '../../assets/logo.svg';
 import { ILoginForm } from '../../models/Profile';
@@ -6,7 +5,6 @@ import { useNavigate } from 'react-router-dom';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { FormInput } from '../../common/FormInput';
 import { FormButton } from '../../common/FormButton';
-// import { useUserProfile } from '../../provider/UserProvider';
 import { loginApi } from '../../api/login';
 
 const Login = () => {
@@ -16,7 +14,6 @@ const Login = () => {
         formState: { errors }
     } = useForm<ILoginForm>();
     const navigate = useNavigate();
-    // const { setProfile } = useUserProfile();
     const formSubmit: SubmitHandler<ILoginForm> = ({ email, password }) => {
     loginApi({email, password}).then(res => {
         console.log('logged in successfully', res);
