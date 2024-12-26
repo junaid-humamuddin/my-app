@@ -7,3 +7,7 @@
   from = "/api/*"
   status = 200
   to = "/.netlify/functions/app/:splat"
+
+[context.production.environment]
+  TOML_ENV_VAR = "From netlify.toml"
+  REACT_APP_TOML_ENV_VAR = "From netlify.toml (REACT_APP_)"
