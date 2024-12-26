@@ -13,19 +13,23 @@ const Summary = lazy(() => import('./pages/booking/summary'));
 
 function App() {
   return (
-    <Suspense fallback='Loading...'>
-      <Routes>
-        <Route path="/" element={<Index />} >
-          <Route path="/home" element={<Home />} />
-          <Route path="/cars" element={<Cars />} />
-          <Route path="/infinite" element={<InfiniteScrollLocal />} />
-          <Route path="/lazy" element={<LazyInfiniteScroll />} />
-          <Route path="/summary" element={<Summary />} />
-        </Route>
-        <Route path="/login" element={<Login />} />
-        <Route path="*" element={<Notfound />} />
-      </Routes>
-    </Suspense>
+    <div className='App'>
+      <h1>Hello World</h1>
+      <h2>ENV Variable : {process.env.REACT_APP_API_KEY}</h2>
+    </div>
+    // <Suspense fallback='Loading...'>
+    //   <Routes>
+    //     <Route path="/" element={<Index />} >
+    //       <Route path="/home" element={<Home />} />
+    //       <Route path="/cars" element={<Cars />} />
+    //       <Route path="/infinite" element={<InfiniteScrollLocal />} />
+    //       <Route path="/lazy" element={<LazyInfiniteScroll />} />
+    //       <Route path="/summary" element={<Summary />} />
+    //     </Route>
+    //     <Route path="/login" element={<Login />} />
+    //     <Route path="*" element={<Notfound />} />
+    //   </Routes>
+    // </Suspense>
   );
 }
 
